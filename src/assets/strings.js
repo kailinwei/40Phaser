@@ -18,3 +18,14 @@ export default {
     startingInstructions: `Press 'p' to play, 'b' to build your own, or 'c' to contribute.`,
     unpause: `un(P)ause`,
 };
+const existingHighScore=number;
+
+const possibleSaying =["Wow! Same high score!", "Amazing, new high score!", "Maybe next time"]
+
+ currentScore=(score)=>{
+    if (score==existingHighScore){console.log(possibleSaying[0])}
+    if (score>existingHighScore){console.log(possibleSaying[1])}
+    if(score<existingHighScore){console.log(possibleSaying[2])}
+}
+
+currentScore();
